@@ -6,9 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "db": "json-server --watch src/db/db.json --port 8000"
   },
   "dependencies": {
+    "json-server": "^1.0.0-alpha.23",
     "next": "14.2.2",
     "react": "^18",
     "react-dom": "^18"
@@ -17,7 +19,7 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "daisyui": "^4.10.2",
+    "daisyui": "^4.10.5",
     "eslint": "^8",
     "eslint-config-next": "14.2.2",
     "postcss": "^8",

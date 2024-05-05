@@ -15,6 +15,22 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          bg: "#f1f1f1",
+          chatbubblebg: "#ffffff",
+          text: "#acacac",
+          timetext: "#acacac",
+          artistbadgestart: "#fa6c8a",
+          artistbadgeend: "#ffafbe",
+          profilestart: "#ff79b6",
+          profileend: "#ffa9cd",
+        },
+      },
+    ],
+  },
 };
 export default config;
