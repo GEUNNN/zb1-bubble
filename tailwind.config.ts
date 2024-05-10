@@ -29,6 +29,11 @@ const config: Config = {
           profilestart: "#ff79b6",
           profileend: "#ffa9cd",
         },
+        extends: {
+          colors: {
+            "chat-primary": "#ffffff",
+          },
+        },
       },
     ],
   },
