@@ -3,6 +3,7 @@ import { getData } from "@/api/api";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import dayjs from "dayjs";
+import ChatHeader from "@/components/ChatHeader";
 
 const Page: React.FC = () => {
   const [data, setData] = useState([]);
@@ -11,7 +12,8 @@ const Page: React.FC = () => {
     getData().then((res) => setData(res));
   }, []);
   return (
-    <div className="">
+    <main className="">
+      <ChatHeader />
       {data.map((item, i) => (
         <div key={i} className="chat chat-start">
           <div className="chat-image avatar">
@@ -46,7 +48,7 @@ const Page: React.FC = () => {
           </div>
         </div>
       ))}
-    </div>
+    </main>
   );
 };
 
