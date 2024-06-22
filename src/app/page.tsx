@@ -11,11 +11,11 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="flex flex-row z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
+    <main className="min-h-screen flex-col items-center justify-between p-24">
+      <div className="flex-row z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
         {data.map((item, i) =>
           item.type === "text" ? (
-            <div key={i} className="whitespace-pre-wrap">
+            <div key={i} className="whitespace-pre-wrap ">
               {item.content}
             </div>
           ) : (
