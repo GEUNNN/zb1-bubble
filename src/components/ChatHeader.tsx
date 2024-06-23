@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { MemberName } from "@/types/constant.types";
+import Link from "next/link";
 
 interface ChatHeaderProps {
   name: MemberName;
@@ -10,9 +11,9 @@ const ChatHeader = ({ name }: ChatHeaderProps) => {
   return (
     <header className="navbar min-h-16 sticky top-0 left-0 max-w-[450px] bg-white z-50">
       <div className="navbar-start">
-        <button className="btn btn-square btn-ghost">
+        <Link href="/" className="btn btn-square btn-ghost">
           <Image width={20} height={20} src="/icons/back.png" alt="back sign" />
-        </button>
+        </Link>
       </div>
       <div className="navbar-center">{name}</div>
       <div className="navbar-end">
