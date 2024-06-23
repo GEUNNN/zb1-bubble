@@ -13,11 +13,11 @@ const Page: React.FC = () => {
   }, []);
   return (
     <main className="">
-      <ChatHeader />
+      <ChatHeader name="성한빈" />
       {data.map((item, i) => (
-        <div key={i} className="chat chat-start">
-          <div className="chat-image avatar">
-            <div className="w-10 rounded-full">
+        <div key={i} className="chat chat-start ">
+          <div className="chat-image avatar -z-0">
+            <div className="w-10 rounded-full ">
               <Image
                 alt="bubble profile image"
                 width={10}
