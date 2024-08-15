@@ -3,7 +3,7 @@ import { getData } from "@/api/api";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import dayjs from "dayjs";
-import ChatHeader from "@/components/ChatHeader";
+import ChatHeader from "@/components/header/ChatHeader";
 
 const Page: React.FC = () => {
   const [data, setData] = useState([]);
