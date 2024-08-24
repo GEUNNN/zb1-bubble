@@ -1,6 +1,6 @@
 import { MemberName } from "@/types/constant.types";
 import Image from "next/image";
-import React, { memo } from "react";
+import shbProfile from "../../../public/profile/shbProfile.jpeg";
 
 export interface MemberProps {
   name: MemberName;
@@ -9,12 +9,14 @@ export interface MemberProps {
 
 const Member = ({ name, status }: MemberProps) => {
   return (
-    <div className="p-3 flex justify-between">
-      <div className="flex gap-2 content-center">
-        <Image src="" alt="profile image" width={10} height={10} />
+    <div className="p-3 flex items-center justify-between">
+      <div className="flex items-center gap-2">
+        <div className="w-12 h-12 rounded-full overflow-hidden">
+          <Image src={shbProfile} alt="profile image" />
+        </div>
         <span>{name}</span>
       </div>
-      <p>{status}</p>
+      <p className="text-xs">{status}</p>
     </div>
   );
 };

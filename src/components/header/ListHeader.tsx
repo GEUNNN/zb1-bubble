@@ -6,8 +6,8 @@ interface ListHeaderProps {
 
 const ListHeader = ({ type }: ListHeaderProps) => {
   return (
-    <header className="navbar fixed max-w-[450px] bg-white z-40">
-      <h1 className="navbar-start text-xl pl-5">
+    <header className="navbar fixed max-w-[450px] bg-white">
+      <h1 className="navbar-start text-xl px-3">
         {type === "profile" ? "FRIENDS" : "CHATS"}
       </h1>
     </header>

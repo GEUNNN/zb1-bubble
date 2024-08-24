@@ -8,3 +8,8 @@ export type MemberName =
   | "김규빈"
   | "박건욱"
   | "한유진";
+
+export interface MemberProps {
+  name: MemberName;
+  status: string;
+}
